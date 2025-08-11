@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --title-font: "Montserrat", sans-serif;
+    --subtitle-font: "Manrope", sans-serif;
+    --body-bg: #551755;
+    --btn-bg: #9200DA;
+    --text-secondary: #999999;
+    --bg-black: #1E2227;
+    --gold: #ffda6a;
+}
+
+body{
+    background: var(--body-bg);
+}
+a{
+    text-decoration: none;
+}
+.text-gold{
+    color: var(--gold);
+}
+.title{
+    font-family: var(--title-font);
+}
+
+/* Pre Loader  */
+#preloader{
+    background: #000 url('../img/preloader.gif') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* NavBar Code */
+header .navbar-top, .navbar-bottom {
+    background: linear-gradient(to right, #3b003b, #7d009d);
+}
+header .navbar-brand img {
+    height: 50px;
+}
+header .navbar-bottom .nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: .3s all ease-in-out;
+}
+.navbar-bottom .nav-link.active,
+.navbar-bottom .nav-link:hover {
+    color: #d1a750; 
+}
+header .btn-login {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 50px;
+    padding: 0.3rem 1rem;
+    background: transparent;
+}
+header .btn-login:hover {
+    border-color: white;
+    
+}
+.btn-subscribe {
+    background: var(--btn-bg);
+    color: white;
+    border-radius: 50px;
+    padding: 0.3rem 1rem;
+    border: none;
+    border: 1px solid transparent;
+    transition: .3s all;
+}
+.btn-subscribe:hover{
+    border-color: rgba(255, 255, 255, 0.5);
+}
+header .search-icon {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+header .navbar-bottom {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header .offcanvas-end{
+    width: 100%;
+    border: none;
+    background: var(--body-bg);
+    color: #fff;
+}
+.offcanvas-body {
+    background: linear-gradient(to bottom, #3b003b, #7d009d);
+}
+.offcanvas-body .nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+.offcanvas-body .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffda6a;
+}
+.offcanvas-body .nav-link.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #d1a750;
+}
+.offcanvas-body form input {
+    background: white;
+    border: none;
+}
+
+/* -- Home Section -- */
+.home{
+    width: 100%;
+    height: 680px;
+    background: url('../img/index/home-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home .home-overly{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* content section */
+.underline {
+    border-bottom: 2px solid #a8862f;
+    width: 100%;
+  }
+  .movie-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    font-size: 0.85rem;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    font-weight: 600;
+  }
