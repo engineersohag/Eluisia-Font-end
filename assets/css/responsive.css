@@ -1,0 +1,25 @@
+/* for mediam device */
+@media only screen and (max-width: 815px) {
+    .home-page .home{
+        height: 450px;
+    }
+    .home-page .home .description{
+        width: 80% !important;
+        font-size: 14px;
+    }
+    .nostalgia p{
+        font-size: 14px;
+    }
+}
+
+/* for mobile device */
+
+@media only screen and (max-width: 415px){
+    .home-page .home .description{
+        width: 100% !important;
+        font-size: 12px;
+    }
+    .nostalgia p{
+        font-size: 12px;
+    }
+}
