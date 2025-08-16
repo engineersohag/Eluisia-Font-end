@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eluisia</title>
+	<!-- Icons CDN -->
+	<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- -- Custom CSS -- -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	 <!-- preloader -->
+	<div id="preloader"></div>
+
+	<!-- header part  -->
+	<header>
+		<!-- Top Row -->
+		<div class="navbar-top pt-2">
+			<div class="container d-flex justify-content-between align-items-center">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo.png" alt="Logo">
+				</a>
+
+				<!-- Right side -->
+				<div class="d-lg-flex align-items-center d-none">
+					<a href="" class="me-2"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+					<a href="login.html" class="btn btn-login text-white me-2">Login</a>
+					<a href="login.html" class="btn btn-subscribe text-white">Subscribe</a>
+				</div>
+
+				<!-- -- responsive Menu Button -- -->
+				<button class="btn btn-subscribe text-white d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#responsiveNav" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+			</div>
+		</div>
+
+		<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="responsiveNav" aria-labelledby="offcanvasRightLabel">
+			<div class="container mt-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/img/logo.png" alt="Logo">
+					</a>
+					<button type="button" class="text-white btn fs-5" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+
+				<div class="offcanvas-body mt-4 rounded p-4">
+					<ul class="navbar-nav w-100">
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="index.html"><i class="fa-solid fa-house text-gold me-2"></i> HOME</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="live.html"><i class="fa-solid text-gold fa-tv me-2"></i> LIVE TV</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="entertainment.html"><i class="fa-solid text-gold fa-video me-2"></i> ENTERTAINMENT</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="elokidz.html"><i class="fa-solid text-gold fa-child me-2"></i> ÈLOKIDZ</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="radio.html"><i class="fa-solid text-gold fa-radio me-2"></i> RADIO</a>
+						</li>
+						<li class="nav-item mb-3">
+							<a class="nav-link" href="login.html"><i class="fa-solid text-gold fa-lock me-2"></i> Login</a>
+						</li>
+						<li>
+						<form action="" class="d-flex align-items-center">
+							<input type="search" placeholder="Search" class="form-control me-2 rounded-pill">
+							<button class="btn btn-subscribe text-white rounded-pill px-3">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</form>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Bottom Row For Nav -->
+		<nav class="navbar navbar-expand-lg navbar-bottom">
+			<div class="container justify-content-center">
+				<div class="collapse navbar-collapse justify-content-center" id="mainNav">
+					<ul class="navbar-nav">
+						<li class="nav-item me-3">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="live.html">LIVE TV</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="entertainment.html">ENTERTAINMENT</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="elokidz.html">ÈLOKIDZ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="radio.html">RADIO</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- -- Main Content -- -->
+	<main class="login-page">
+		<div class="container">
+            <div class="card bg-transparent">
+                <div class="login-card text-center">
+                    <h2>Elouisa Plus</h2>
+                    <p>Enter following details to login.</p>
+
+                    <!-- Email -->
+                    <div class="input-group mb-3 mt-5">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="Email" autocomplete="off">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control password-field" placeholder="Password">
+                        <span class="input-group-text passEye"><i class="fa-solid fa-eye-slash"></i></span>
+                    </div>
+
+                    <!-- Options -->
+                    <div class="options mb-3">
+                        <div>
+                            <input type="checkbox" id="remember"> <label for="remember">Remember me</label>
+                        </div>
+                        <div>
+                            <a href="forget-password.html">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button class="btn btn-login w-100">Login</button>
+
+                    <p class="mt-4 conti_sign">Continue Sign In With</p>
+                    <div class="d-flex justify-content-center social-icons">
+                        <button class="btn google"><i class="fab fa-google"></i></button>
+                        <button class="btn facebook"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn apple"><i class="fab fa-apple"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+	</main>
+
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		let preloader = document.getElementById('preloader');
+
+		window.addEventListener("load", function(){
+			preloader.style.display = "none";
+		});
+	</script>
+</body>
+</html>
