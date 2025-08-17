@@ -1027,7 +1027,7 @@ section.search{
     border-radius: 8px;
     padding: 10px 20px;
 }
-.payment-card .form-control, .input-group-text {
+.payment-card .form-control, .payment-card .input-group-text {
     background: #3b003f;
     border: none;
     color: #fff;
