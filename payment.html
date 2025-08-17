@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eluisia</title>
+	<!-- Icons CDN -->
+	<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- -- Custom CSS -- -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	 <!-- preloader -->
+	<div id="preloader"></div>
+
+	<!-- header part  -->
+	<header>
+		<!-- Top Row -->
+		<div class="navbar-top pt-2">
+			<div class="container d-flex justify-content-between align-items-center">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo.png" alt="Logo">
+				</a>
+
+				<!-- Right Side -->
+                <div class="d-lg-flex d-none align-items-center justify-content-center">
+                    <a href="" class="me-2"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+                    <div class="profile-btn mt-3 mt-lg-0">
+                        <img src="assets/img/profile.png" alt="">
+                        <h6 class="mt-1 text-white">Jhone</h6>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical text-white fs-5"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+
+                                <!-- Item 1 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="account-details.html">Account</a>
+                                </li>
+
+                                <!-- Item 2 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="account-details.html">Settings</a>
+                                    <ul class="dropdown-menu">
+                                        <h5 class="text-white px-4 py-2">Settings</h5>
+
+                                        <li>
+                                            <a class="dropdown-item" href="account-details.html">
+                                                <i class="fa-regular fa-circle-user me-2"></i> <span>Account Details</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="subscription.html">
+                                                <i class="fa-solid fa-id-card me-2"></i> <span>Subscription</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="payment.html">
+                                                <i class="fa-solid fa-credit-card me-2"></i> <span>Payment</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="device.html">
+                                                <i class="fa-solid fa-computer me-2"></i> <span>Devices</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="invoice.html">
+                                                <i class="fa-solid fa-file-invoice me-2"></i> <span>Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fa-solid fa-right-from-bracket text-danger me-2"></i><span>Logout</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+
+                                <!-- Item 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                                </li>
+
+                                <!-- Item 4 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                </li>
+
+                                <!-- Item 5 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+				<!-- -- responsive Menu Button -- -->
+				<button class="btn btn-subscribe text-white d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#responsiveNav" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+			</div>
+		</div>
+
+		<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="responsiveNav" aria-labelledby="offcanvasRightLabel">
+			<div class="container mt-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/img/logo.png" alt="Logo">
+					</a>
+					<button type="button" class="text-white btn fs-5" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+
+				<div class="offcanvas-body mt-4 rounded p-4">
+					<ul class="navbar-nav w-100">
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="index.html"><i class="fa-solid fa-house text-gold me-2"></i> HOME</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="live.html"><i class="fa-solid text-gold fa-tv me-2"></i> LIVE TV</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="entertainment.html"><i class="fa-solid text-gold fa-video me-2"></i> ENTERTAINMENT</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="elokidz.html"><i class="fa-solid text-gold fa-child me-2"></i> ÈLOKIDZ</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="radio.html"><i class="fa-solid text-gold fa-radio me-2"></i> RADIO</a>
+						</li>
+						<li class="nav-item mb-3">
+							<div class="profile-btn mt-3 mt-lg-0">
+                                <img src="assets/img/profile.png" alt="">
+                                <h6 class="mt-1 text-white">Jhone</h6>
+                                <div class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical text-white fs-5"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+
+                                        <!-- Item 1 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="profile.html">Account</a>
+                                        </li>
+
+                                        <!-- Item 2 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="account-details.html">Settings</a>
+                                        </li>
+
+                                        <!-- Item 3 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                                        </li>
+
+                                        <!-- Item 4 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="about.html">About Us</a>
+                                        </li>
+
+                                        <!-- Item 5 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                
+                            </div>
+						</li>
+						<li>
+						<form action="" class="d-flex align-items-center">
+							<input type="search" placeholder="Search" class="form-control me-2 rounded-pill">
+							<button class="btn btn-subscribe text-white rounded-pill px-3">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</form>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Bottom Row For Nav -->
+		<nav class="navbar navbar-expand-lg navbar-bottom">
+			<div class="container justify-content-center">
+				<div class="collapse navbar-collapse justify-content-center" id="mainNav">
+					<ul class="navbar-nav">
+						<li class="nav-item me-3">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="live.html">LIVE TV</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="entertainment.html">ENTERTAINMENT</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="elokidz.html">ÈLOKIDZ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="radio.html">RADIO</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- -- Main Content -- -->
+	<main class="account-details my-5 text-white">
+		<div class="container">
+            <div class="row">
+                <!-- Side Bar -->
+                <div class="col-lg-3 col-md-4 mb-2">
+                    <div class="sidebar card p-4" style="border-radius: 8px;">
+                        <h5 class="text-white py-2 fw-bold"> Settings</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="account-details.html">
+                                    <i class="fa-regular fa-circle-user me-2"></i> Account Details
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="subscription.html">
+                                    <i class="fa-solid fa-id-card me-2"></i> Subscription
+                                </a>
+                            </li>
+                            <li class="nav-item active mb-2">
+                                <a class="nav-link text-white" href="payment.html">
+                                    <i class="fa-solid fa-credit-card me-2"></i> Payment
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="device.html">
+                                    <i class="fa-solid fa-computer me-2"></i> Devices
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="invoice.html">
+                                    <i class="fa-solid fa-file-invoice me-2"></i> Invoice
+                                </a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <form method="POST" action="">
+                                    <button type="submit" class="btn btn-danger w-100">
+                                        <i class="fa-solid fa-right-from-bracket me-2"></i> Logout
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -- Main Conent -- -->
+                <div class="col-lg-9 col-md-8 mb-2">
+                    <div class="payment-box card">
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs" id="paymentTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link mb-2 mb-md-0 active" id="card-tab" data-bs-toggle="tab" data-bs-target="#card" type="button" role="tab" aria-controls="card" aria-selected="true">Card</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link mb-2 mb-md-0" id="global-tab" data-bs-toggle="tab" data-bs-target="#global" type="button" role="tab" aria-controls="global" aria-selected="false">Global</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link mb-2 mb-md-0" id="bank-tab" data-bs-toggle="tab" data-bs-target="#bank" type="button" role="tab" aria-controls="bank" aria-selected="false">Bank</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="paymentTabContent">
+                            
+                            <!-- Card Form -->
+                            <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
+                                <p class="mb-3 text-secondary">Please provide the payment details below</p>
+
+                                <h6 class="mb-2">Card Details:</h6>
+                                <div class="row g-2 mb-4">
+                                    <div class="col-12 position-relative">
+                                        <input type="text" class="form-control" placeholder="XXXX  -  XXXX  -  XXXX  -  XXXX">
+                                        <div class="card-img ss-card">
+                                            <img src="assets/img/card/1.png" alt="" class="img-fluid">
+                                            <img src="assets/img/card/2.png" alt="" class="img-fluid">
+                                            <img src="assets/img/card/3.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Expiry Date">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="CVV">
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-2">Card Holder Details:</h6>
+                                <div class="row g-2 mb-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Your Name Here">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Billing address">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="City">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Country">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Enter Voucher Code">
+                                    </div>
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="agree">
+                                    <label class="form-check-label terms" for="agree">
+                                    By proceeding with your purchase you agree to our <a href="#">Terms and Conditions</a> and Privacy Policy.
+                                    </label>
+                                </div>
+
+                                <!-- Confirm button -->
+                                <button class="btn btn-confirm">Confirmed</button>
+                            </div>
+
+                            <!-- Global Tab -->
+                            <div class="tab-pane fade" id="global" role="tabpanel" aria-labelledby="global-tab">
+                                <div class="card text-center px-5 py-3">
+                                    <img src="assets/img/card/stripe.png" alt="" style="width: 85px;">
+                                    <div class="border-bottom w-100 my-2"></div>
+                                    <p class="small text-secondary">Stripe - Card Pay <br>
+                                    (Visa/Master/Amex)</p>
+                                </div>
+
+                                 <button class="btn btn-confirm mt-5">Pay 29.99 USD</button>
+                            </div>
+
+                            <!-- Bank Tab -->
+                            <div class="tab-pane fade oneBank" id="bank" role="tabpanel" aria-labelledby="bank-tab">
+                                <div class="row mb-2">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card mb-3 text-center px-5 py-3">
+                                            <img src="assets/img/card/b1.png" alt="" style="width: 85px;">
+                                            <div class="border-bottom w-100 my-2"></div>
+                                            <p class="small text-secondary">US Bank</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card mb-3 text-center px-5 py-3">
+                                            <img src="assets/img/card/b2.png" alt="" style="width: 130px;">
+                                            <div class="border-bottom w-100 my-2"></div>
+                                            <p class="small text-secondary">US Bank</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card mb-3 text-center px-5 py-3">
+                                            <img src="assets/img/card/b3.png" alt="" style="width: 130px;">
+                                            <div class="border-bottom w-100 my-2"></div>
+                                            <p class="small text-secondary">US Bank</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card mb-3 text-center px-5 py-3">
+                                            <img src="assets/img/card/b1.png" alt="" style="width: 85px;">
+                                            <div class="border-bottom w-100 my-2"></div>
+                                            <p class="small text-secondary">US Bank</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card mb-3 text-center px-5 py-3">
+                                            <img src="assets/img/card/b2.png" alt="" style="width: 130px;">
+                                            <div class="border-bottom w-100 my-2"></div>
+                                            <p class="small text-secondary">US Bank</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card mb-3 text-center px-5 py-3">
+                                            <img src="assets/img/card/b3.png" alt="" style="width: 130px;">
+                                            <div class="border-bottom w-100 my-2"></div>
+                                            <p class="small text-secondary">US Bank</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <button class="btn btn-confirm mt-5" id="bankDetails">Pay 29.99 USD</button>
+                            </div>
+
+                            <!-- Bank Account Details Tab -->
+                            <div class="tab-pane fade twoBank" id="bank" role="tabpanel" aria-labelledby="bank-tab">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="account-box">
+                                            <h6 class="mb-3">Account Details:</h6>
+                                            
+                                            <form action="javascript:void(0)">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" placeholder="Full Name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" placeholder="Account Number">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" placeholder="Routing Number">
+                                                </div>
+                                                <div class="row g-2 mb-3">
+                                                    <div class="col-md-6">
+                                                        <input type="email" class="form-control" placeholder="Email">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-confirm mt-5" id="twoBtnCOn">Continue</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bank Payment Card Tab -->
+                            <div class="tab-pane fade threeBank" id="bank" role="tabpanel" aria-labelledby="bank-tab">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="payment-card shadow">
+                                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                                <div class="bank-logo">
+                                                <img src="assets/img/card/b2.png" alt="Union Bank" height="30">
+                                                </div>
+                                                <button class="amount-btn">Pay 29.99 USD</button>
+                                            </div>
+
+                                            <!-- Reference -->
+                                            <div class="mb-3">
+                                                <label for="reference" class="form-label">Reference <span class="text-danger">*</span></label>
+                                                <input type="text" id="reference" class="form-control" placeholder="Enter reference">
+                                            </div>
+
+                                            <!-- Bank Name -->
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" value="Bank Name: Union Bank" readonly>
+                                                <button class="btn btn-primary copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                                            </div>
+
+                                            <!-- Account Name -->
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" value="Account Name: Mr. Your Name" readonly>
+                                                <button class="btn btn-primary copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                                            </div>
+
+                                            <!-- Account Number -->
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" value="Account Number: 12345678901234567890" readonly>
+                                                <button class="btn btn-primary copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                                            </div>
+
+                                            <!-- Branch Name -->
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" value="Branch Name: Network city" readonly>
+                                                <button class="btn btn-primary copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                                            </div>
+
+                                            <!-- Routing Number -->
+                                            <div class="input-group mb-4">
+                                                <input type="text" class="form-control" value="Routing Number: 12345678901234567890" readonly>
+                                                <button class="btn btn-primary copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                                            </div>
+
+
+                                            <!-- Submit Button -->
+                                            <button class="btn-confirm text-white">Submit</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	</main>
+
+
+	<!-- footer section -->
+	<footer>
+		<div class="container">
+			<div class="row gy-4">
+				<!-- Useful Links -->
+				<div class="col-12 col-lg-2 col-md-4">
+					<h5>Useful Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="live.html">Live TV</a></li>
+						<li><a href="radio.html">Radio</a></li>
+						<li><a href="entertainment.html">Entertainment</a></li>
+						<li><a href="elokidz.html">Elokiz</a></li>
+					</ul>
+				</div>
+
+				<!-- Address -->
+				<div class="col-12 col-md-4">
+					<h5 class="footer-line">Address</h5>
+					<p>Address: 1234 Elm Street, Suite 567,<br>
+					Downtown City, State, ZIP Code</p>
+					<h5 class="footer-line mt-4">Email:</h5>
+					<p>email@example.com</p>
+				</div>
+
+				<!-- Phone -->
+				<div class="col-12 col-md-3 col-lg-4">
+					<h5 class="footer-line">Phone</h5>
+					<div class="d-flex d-md-block d-lg-flex justify-content-between">
+						<div>
+							<p><strong>Service:</strong><br>(123) 456-7890</p>
+						</div>
+						<div>
+							<p><strong>Office Reception:</strong><br>(123) 456-7890</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-1 col-12 align-self-end">
+					<div class="social-icons">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-x-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- Bottom Footer -->
+		<div class="row footer-border align-items-center">
+			<p class="col-12 text-center">
+				© 2024 Elouisa. All rights reserved.
+			</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		let preloader = document.getElementById('preloader');
+
+		window.addEventListener("load", function(){
+			preloader.style.display = "none";
+		});
+	</script>
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                let input = this.previousElementSibling; // input element
+                input.select();
+                input.setSelectionRange(0, 99999); // mobile support
+                navigator.clipboard.writeText(input.value);
+
+                // Change button text
+                let originalText = this.innerHTML;
+                this.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                this.disabled = true;
+
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    this.disabled = false;
+                }, 2000); // 2 seconds
+            });
+        });
+    </script>
+
+    <!-- It's just for temporary -->
+    <script>
+        let btnDetails = document.getElementById('bankDetails');
+        let twoBtnCOn = document.getElementById('twoBtnCOn');
+        let showoneBank = document.querySelector('.oneBank');
+        let twiBack = document.querySelector('.twoBank');
+        let threeBank = document.querySelector('.threeBank');
+
+        btnDetails.addEventListener('click', function() {
+            showoneBank.style.display = 'none';
+            twiBack.classList.add('show', 'active'); 
+        });
+
+        twoBtnCOn.addEventListener('click', function() {
+            twiBack.classList.remove('show', 'active');
+            twiBack.style.display = 'none';
+            showoneBank.style.display = 'none';
+            threeBank.classList.add('show', 'active'); 
+        });
+
+
+
+    </script>
+</body>
+</html>

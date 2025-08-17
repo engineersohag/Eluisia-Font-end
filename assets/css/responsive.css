@@ -10,6 +10,9 @@
     .nostalgia p{
         font-size: 14px;
     }
+    .payment-box .card-img{
+        left: 70% !important;
+    }
     
 }
 
@@ -29,5 +32,12 @@
     }
     .live-page .card{
         height: 350px;
-
+    }
+    .payment-box .card-img{
+        display: none;
+    }
+    #global .w-50,
+    #bank .w-50{
+        width: 100% !important;
+    }
 }

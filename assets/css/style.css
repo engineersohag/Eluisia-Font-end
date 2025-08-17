@@ -563,6 +563,9 @@ section.search{
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+.signup-card{
+    max-width: 520px;
+}
 .login-card h2 {
     font-weight: 600;
     margin-bottom: 10px;
@@ -580,12 +583,12 @@ section.search{
 .login-page .input-group i{
     color: #9900E5;
 }
-.form-control {
+.login-card .form-control {
     background: none;
     border: none;
     color: #fff;
 }
-.form-control:focus {
+.login-card .form-control:focus {
     box-shadow: none;
     background: none;
     color: #fff;
@@ -660,6 +663,10 @@ section.search{
     top: 10px;
     left: 0;
 }
+.signup-card .conti_sign::after,
+.signup-card .conti_sign::before{
+    width: 160px;
+}
 .otp-varification .form-control{
     background: #4b1a6a;
     text-align: center;
@@ -671,7 +678,372 @@ section.search{
     text-decoration: underline;
 }
 
+.profile-btn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--btn-bg);
+    padding: 8px;
+    border-radius: 30px;
+}
+.profile-btn img{
+    width: 30px;
+    height: 30px;
+}
+.profile-btn a{
+    color: #fff;
+}
 
+.dropdown-toggle::after{
+    border: none;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.dropdown .btn-filter{
+    align-self: center !important;
+    background: #1B0121;
+    padding: 5px 10px;
+    border-radius: 50%;
+    padding-right: 4px;
+}
+.dropdown .btn-filter i{
+    font-size: 20px;
+    
+}
+
+/* Hover submenu show */
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-menu.show{
+    background-color: #1B0121;
+    color: #fff !important;
+    padding: 5px 10px;
+    position: absolute;
+    left: auto;
+    right: 0%;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    right: 100%; 
+    left: auto;
+    margin-right: 0.1rem;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Improve submenu appearance */
+.dropdown-menu > li > a {
+    white-space: nowrap;
+    border-radius: 5px !important;
+}
+.dropdown-menu .dropdown-item{
+    color: #fff;
+    padding: 10px 25px;
+}
+
+.dropdown-submenu .dropdown-item:hover{
+    background-color: #4F0A5D;
+}
+.dropdown-submenu .dropdown-menu{
+    background-color: #1B0121;
+}
+.profile-btn .dropdown-item{
+    padding-right: 80px;
+}
+
+/* -- account details -- */
+.account-details .card{
+    background: #1B0121;
+}
+.account-details .cus-btn{
+    background-color: #4F0A5D;
+}
+.account-details .cus-btn i{
+    color: #9900E5;
+}
+.account-details .form-control,
+.account-details .passEye{
+    background-color: #4F0A5D;
+}
+
+.sidebar .nav .nav-item:hover{
+    background: #4F0A5D;
+}
+.sidebar .nav .nav-item.active{
+    background-color: #9900E5;
+}
+
+.modal-content {
+    background: transparent !important;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+.features span {
+    font-size: 13px;
+    margin-right: 15px;
+    color: #bbb;
+}
+.plan-card {
+    background: #4E0A5C;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+}
+.plan-card.active {
+    color: #fff;
+}
+.plan-card.active .plan-card-header{
+    color: #fff;
+}
+.plan-card h6 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.plan-card .price {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    padding-left: 20px;
+    
+}
+.plan-card small, .plan-card del {
+    color: #999;
+}
+
+.plan-card input {
+    display: none;
+}
+
+@media(max-width: 576px) {
+    .plan-card {
+    margin-bottom: 12px;
+    }
+}
+
+
+.plan-card-header {
+    background: #4E0A5C;
+    border-radius: 8px 8px 0 0;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+.price {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.plan-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #999;
+    padding: 20px;
+}
+.radio-indicator {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    background: #484A4B;
+    border-radius: 50%;
+}
+.radio-indicator.active {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-card.active .plan-card-header{
+    background: var(--btn-bg);
+}
+.subscription .btn.btn-primary{
+    background: #4E0A5C !important;
+    padding: 10px 35px;
+    border: none;
+    outline: none;
+}
+.subscription .btn.btn-dark{
+    padding: 13px 35px;
+    border: none;
+    outline: none;
+    background: #4E0A5C !important;
+}
+
+.custom-table {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.custom-table th, 
+.custom-table td {
+    padding: 14px 16px;
+    vertical-align: middle;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.btn-download {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn-download:hover {
+    background: #fff;
+    color: #2d0142;
+}
+
+.payment-box {
+    /* max-width: 720px; */
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Tabs */
+.payment-box .nav-tabs {
+    border: none;
+    margin-bottom: 25px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #fff;
+}
+.payment-box .nav-tabs .nav-link {
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: #5a1b77;
+    margin-right: 8px;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: .4s all ease;
+}
+.payment-box .nav-tabs .nav-link:hover{
+    background: var(--btn-bg);
+}
+.payment-box .nav-tabs .nav-link.active {
+    background: var(--btn-bg);
+    color: #fff;
+    font-weight: 600;
+}
+
+.payment-box .form-label { font-size: 0.9rem; color: #ccc; margin-bottom: 5px; }
+.payment-box .form-control {
+    background-color: #4F0A5D;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+}
+.payment-box .form-control::placeholder {
+    color: #d1b8e0;
+}
+.payment-box .form-check-input {
+    background-color: #6a1b9a;
+    border: none;
+}
+.payment-box .form-check-input:checked {
+    background-color: #7b3ca8;
+}
+.payment-box .terms {
+    color: #c9c1d3;
+    font-size: 0.9rem;
+}
+.payment-box .terms a {
+    color: #b178eb;
+    text-decoration: none;
+}
+.payment-box .terms a:hover { text-decoration: underline; }
+
+/* Confirm button */
+.payment-box .btn-confirm {
+    background-color: #e0a24f;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 20px;
+}
+.payment-box .btn-confirm:hover {
+    background-color: #d08d3a;
+}
+.payment-box .card-img img{
+    width: 28px;
+    height: 18px;
+    margin-right: 10px;
+}
+.payment-box .card-img.ss-card{
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translateY(-50%);
+}
+#global .card,
+#bank .card{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4F0A5D;
+    border-radius: 10px;
+}
+.payment-card {
+    background-color: #2a0030;
+    border-radius: 10px;
+    padding: 25px;
+    margin: auto;
+}
+.payment-card .bank-logo {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.payment-card .amount-btn {
+    background: #3b003f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.payment-card .form-control, .input-group-text {
+    background: #3b003f;
+    border: none;
+    color: #fff;
+}
+.payment-card .form-control:focus {
+    background: #3b003f;
+    color: #fff;
+    box-shadow: none;
+}
+.payment-card .btn-primary{
+    background: #4F0A5D !important;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
 
 
 
