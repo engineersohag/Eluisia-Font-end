@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eluisia</title>
+	<!-- Icons CDN -->
+	<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- -- Custom CSS -- -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	 <!-- preloader -->
+	<div id="preloader"></div>
+
+	<!-- header part  -->
+	<header>
+		<!-- Top Row -->
+		<div class="navbar-top pt-2">
+			<div class="container d-flex justify-content-between align-items-center">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo.png" alt="Logo">
+				</a>
+
+				<!-- Right Side -->
+                <div class="d-lg-flex d-none align-items-center justify-content-center">
+                    <a href="" class="me-2"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+                    <div class="profile-btn mt-3 mt-lg-0">
+                        <img src="assets/img/profile.png" alt="">
+                        <h6 class="mt-1 text-white">Jhone</h6>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical text-white fs-5"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+
+                                <!-- Item 1 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="account-details.html">Account</a>
+                                </li>
+
+                                <!-- Item 2 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="account-details.html">Settings</a>
+                                    <ul class="dropdown-menu">
+                                        <h5 class="text-white px-4 py-2">Settings</h5>
+
+                                        <li>
+                                            <a class="dropdown-item" href="account-details.html">
+                                                <i class="fa-regular fa-circle-user me-2"></i> <span>Account Details</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="subscription.html">
+                                                <i class="fa-solid fa-id-card me-2"></i> <span>Subscription</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="payment.html">
+                                                <i class="fa-solid fa-credit-card me-2"></i> <span>Payment</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="device.html">
+                                                <i class="fa-solid fa-computer me-2"></i> <span>Devices</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="invoice.html">
+                                                <i class="fa-solid fa-file-invoice me-2"></i> <span>Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fa-solid fa-right-from-bracket text-danger me-2"></i><span>Logout</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+
+                                <!-- Item 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                                </li>
+
+                                <!-- Item 4 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                </li>
+
+                                <!-- Item 5 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+				<!-- -- responsive Menu Button -- -->
+				<button class="btn btn-subscribe text-white d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#responsiveNav" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+			</div>
+		</div>
+
+		<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="responsiveNav" aria-labelledby="offcanvasRightLabel">
+			<div class="container mt-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/img/logo.png" alt="Logo">
+					</a>
+					<button type="button" class="text-white btn fs-5" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+
+				<div class="offcanvas-body mt-4 rounded p-4">
+					<ul class="navbar-nav w-100">
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="index.html"><i class="fa-solid fa-house text-gold me-2"></i> HOME</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="live.html"><i class="fa-solid text-gold fa-tv me-2"></i> LIVE TV</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="entertainment.html"><i class="fa-solid text-gold fa-video me-2"></i> ENTERTAINMENT</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="elokidz.html"><i class="fa-solid text-gold fa-child me-2"></i> ÈLOKIDZ</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a class="nav-link" href="radio.html"><i class="fa-solid text-gold fa-radio me-2"></i> RADIO</a>
+						</li>
+						<li class="nav-item mb-3">
+							<div class="profile-btn mt-3 mt-lg-0">
+                                <img src="assets/img/profile.png" alt="">
+                                <h6 class="mt-1 text-white">Jhone</h6>
+                                <div class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical text-white fs-5"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
+
+                                        <!-- Item 1 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="profile.html">Account</a>
+                                        </li>
+
+                                        <!-- Item 2 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="account-details.html">Settings</a>
+                                        </li>
+
+                                        <!-- Item 3 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                                        </li>
+
+                                        <!-- Item 4 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="about.html">About Us</a>
+                                        </li>
+
+                                        <!-- Item 5 -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                
+                            </div>
+						</li>
+						<li>
+						<form action="" class="d-flex align-items-center">
+							<input type="search" placeholder="Search" class="form-control me-2 rounded-pill">
+							<button class="btn btn-subscribe text-white rounded-pill px-3">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</form>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Bottom Row For Nav -->
+		<nav class="navbar navbar-expand-lg navbar-bottom">
+			<div class="container justify-content-center">
+				<div class="collapse navbar-collapse justify-content-center" id="mainNav">
+					<ul class="navbar-nav">
+						<li class="nav-item me-3">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="live.html">LIVE TV</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="entertainment.html">ENTERTAINMENT</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="elokidz.html">ÈLOKIDZ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="radio.html">RADIO</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- -- Main Content -- -->
+	<main class="account-details subscription my-5 text-white">
+		<div class="container my-5">
+            <div class="row">
+                <!-- Side Bar -->
+                <div class="col-lg-3 col-md-4 mb-2">
+                    <div class="sidebar card p-4" style="border-radius: 8px;">
+                        <h5 class="text-white py-2 fw-bold"> Settings</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="account-details.html">
+                                    <i class="fa-regular fa-circle-user me-2"></i> Account Details
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="subscription.html">
+                                    <i class="fa-solid fa-id-card me-2"></i> Subscription
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="payment.html">
+                                    <i class="fa-solid fa-credit-card me-2"></i> Payment
+                                </a>
+                            </li>
+                            <li class="nav-item active mb-2">
+                                <a class="nav-link text-white" href="device.html">
+                                    <i class="fa-solid fa-computer me-2"></i> Devices
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-white" href="invoice.html">
+                                    <i class="fa-solid fa-file-invoice me-2"></i> Invoice
+                                </a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <form method="POST" action="">
+                                    <button type="submit" class="btn btn-danger w-100">
+                                        <i class="fa-solid fa-right-from-bracket me-2"></i> Logout
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -- Main Conent -- -->
+                <div class="col-lg-9 col-md-8 mb-2">
+                    <div class="p-4 rounded-4 mb-4" style="background-color: #1B0121; border-radius: 13px;">
+                        <p class="small text-end">You can have 2 devices saved to your account at a time. </p>
+                        <h4 class="text-white mb-1">Devices</h4>
+                        <p class="text-secondary mb-4">Manage your Devices</p>
+
+                        <div class="row g-4">
+                            <!-- Device 1 -->
+                            <div class="col-md-6">
+                                <div class="p-4 rounded-4 h-100 d-flex flex-column align-items-center text-center" style="background-color: #4F0A5D; border-radius: 13px;">
+                                    <i class="fa-solid fa-desktop" style="font-size: 50px;"></i>
+                                    <h6 class="text-white mt-3 mb-1">Mac Chrome</h6>
+                                    <p class="text-secondary small mb-2">Web Browser</p>
+                                    <button class="btn btn-subscribe rounded-pill btn-sm px-3 mb-3">Current Device</button>
+                                    <div class="w-100 text-start">
+                                        <p class="text-secondary mb-1 d-flex justify-content-between"><span>Profile:</span> <span class="text-white fw-semibold">user@gmail.com</span></p>
+                                        <p class="text-secondary mb-0 d-flex justify-content-between"><span>Last Access:</span> <span class="text-white">12 May, 2025 – 12:23 PM</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Device 2 -->
+                            <div class="col-md-6">
+                                <div class="p-4 rounded-4 h-100 d-flex flex-column align-items-center text-center" style="background-color: #4F0A5D; border-radius: 13px;">
+                                    <i class="fa-solid fa-mobile-screen-button" style="font-size: 50px;"></i>
+                                    <h6 class="text-white mt-3 mb-1">Apple</h6>
+                                    <p class="text-secondary small mb-2">Iphone</p>
+                                    <button class="btn btn-subscribe rounded-pill btn-sm px-4 mb-3">Signout</button>
+                                    <div class="w-100 text-start">
+                                        <p class="text-secondary mb-1 d-flex justify-content-between"><span>Profile:</span> <span class="text-white fw-semibold">user@gmail.com</span></p>
+                                        <p class="text-secondary mb-0 d-flex justify-content-between"><span>Last Access:</span> <span class="text-white">12 May, 2025 – 12:23 PM</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card mb-2 rounded-4 flex-row p-3 d-flex justify-content-between align-items-center">
+                        <h6>Device: Unknown</h6>
+                        <p>Last active: Aug 05 2025, 5:10 PM</p>
+                        <form action="">
+                            <button type="button" class="btn text-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="card mb-2 rounded-4 flex-row p-3 d-flex justify-content-between align-items-center">
+                        <h6>Device: Unknown</h6>
+                        <p>Last active: Aug 05 2025, 5:10 PM</p>
+                        <form action="">
+                            <button type="button" class="btn text-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+
+
+	<!-- footer section -->
+	<footer>
+		<div class="container">
+			<div class="row gy-4">
+				<!-- Useful Links -->
+				<div class="col-12 col-lg-2 col-md-4">
+					<h5>Useful Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="live.html">Live TV</a></li>
+						<li><a href="radio.html">Radio</a></li>
+						<li><a href="entertainment.html">Entertainment</a></li>
+						<li><a href="elokidz.html">Elokiz</a></li>
+					</ul>
+				</div>
+
+				<!-- Address -->
+				<div class="col-12 col-md-4">
+					<h5 class="footer-line">Address</h5>
+					<p>Address: 1234 Elm Street, Suite 567,<br>
+					Downtown City, State, ZIP Code</p>
+					<h5 class="footer-line mt-4">Email:</h5>
+					<p>email@example.com</p>
+				</div>
+
+				<!-- Phone -->
+				<div class="col-12 col-md-3 col-lg-4">
+					<h5 class="footer-line">Phone</h5>
+					<div class="d-flex d-md-block d-lg-flex justify-content-between">
+						<div>
+							<p><strong>Service:</strong><br>(123) 456-7890</p>
+						</div>
+						<div>
+							<p><strong>Office Reception:</strong><br>(123) 456-7890</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-1 col-12 align-self-end">
+					<div class="social-icons">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-x-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- Bottom Footer -->
+		<div class="row footer-border align-items-center">
+			<p class="col-12 text-center">
+				© 2024 Elouisa. All rights reserved.
+			</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		let preloader = document.getElementById('preloader');
+
+		window.addEventListener("load", function(){
+			preloader.style.display = "none";
+		});
+	</script>
+</body>
+</html>
